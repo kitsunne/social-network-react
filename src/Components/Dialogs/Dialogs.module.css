@@ -1,0 +1,73 @@
+.dialogs {
+	display: grid;
+	grid-template-columns: 200px auto;
+	grid-template-rows: auto 150px;
+}
+.dialogsItems {
+	padding: 40px;
+	width: 120px;
+	border-right: 5px solid rgb(255, 255, 255);
+}
+.dialogsItems .active {
+	color: rgb(255, 255, 255);
+}
+.dialog {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 40px;
+	border-radius: 5px;
+	height: 50px;
+	box-shadow: 0 14px 25px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+.dialog a {
+	text-decoration: none;
+	color: black;
+}
+.dialog img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+.messages {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 25px;
+	margin-top: 40px;
+}
+.messages .message {
+	color: black;
+	background-color: #c06c84;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 14px 25px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.newMessage {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 20px;
+}
+
+textarea {
+	width: 300px;
+	height: 40px;
+	font-size: 20px;
+	border: 3px solid rgb(255, 255, 255);
+	margin-right: 10px;
+}
+
+.button {
+	background-color: #c06c84;
+	border: rgb(255, 255, 255) 1px solid;
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+}
