@@ -3,10 +3,10 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import NavBar from "./Components/NavBar/NavBar";
 import Profile from "./Components/Profile/Profile";
-import Dialogs from "./Components/Dialogs/Dialogs";
 import News from "./Components/News/News";
 import Music from "./Components/Music/Music";
 import { Route, Routes } from "react-router-dom";
+import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 
 function App(props) {
 	return (
@@ -18,17 +18,12 @@ function App(props) {
 					<Route
 						exact
 						path="/profile"
-						element={
-							<Profile
-								profilePage={props.state.profilePage}
-								dispatch={props.dispatch}
-							/>
-						}
+						element={<Profile store={props.store} />}
 					/>
 					<Route
 						exact
 						path="/dialogs"
-						element={<Dialogs store={props.store} state={props.state.dialogsPage} />}
+						element={<DialogsContainer store={props.store} />}
 					/>
 					<Route exact path="/news" element={<News />} />
 					<Route exact path="/music" element={<Music />} />
