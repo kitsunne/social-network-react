@@ -29,6 +29,7 @@
   width: 40px;
   height: 40px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 .messages {
   display: flex;
@@ -70,4 +71,51 @@ textarea {
   color: white;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .dialogs {
+    display: grid;
+    grid-template-columns: 145px auto;
+    grid-template-rows: auto 150px;
+  }
+  .dialogsItems {
+    padding: 10px;
+    width: 120px;
+    border-right: 2px solid rgb(255, 255, 255);
+  }
+  .dialog {
+    margin-top: 40px;
+    border-radius: 5px;
+    height: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  }
+  .dialog img {
+    width: 30px;
+    height: 30px;
+  }
+  .messages {
+    padding: 10px;
+    margin-top: 40px;
+  }
+  .messages .message {
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    font-size: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  }
+
+  textarea {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 10px;
+  }
+
+  .button {
+    width: 90px;
+    height: 40px;
+  }
 }

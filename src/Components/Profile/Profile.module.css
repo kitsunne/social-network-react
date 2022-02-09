@@ -1,7 +1,13 @@
 img {
-	width: 950px;
+  width: 950px;
 }
 
-.descriptionBlock{
-	padding:10px;
+.descriptionBlock {
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 380px;
+  }
 }
