@@ -9,28 +9,20 @@ import { Route, Routes } from "react-router-dom";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 
 function App(props) {
-	return (
-		<div className="app-wrapper">
-			<Header />
-			<NavBar />
-			<div className="app-wrapper-content">
-				<Routes>
-					<Route
-						exact
-						path="/profile"
-						element={<Profile store={props.store} />}
-					/>
-					<Route
-						exact
-						path="/dialogs"
-						element={<DialogsContainer store={props.store} />}
-					/>
-					<Route exact path="/news" element={<News />} />
-					<Route exact path="/music" element={<Music />} />
-				</Routes>
-			</div>
-		</div>
-	);
+  return (
+    <div className="app-wrapper">
+      <Header />
+      <NavBar />
+      <div className="app-wrapper-content">
+        <Routes>
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/dialogs" element={<DialogsContainer />} />
+          <Route exact path="/news" element={<News />} />
+          <Route exact path="/music" element={<Music />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
 
 export default App;
