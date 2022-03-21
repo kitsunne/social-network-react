@@ -2,14 +2,36 @@
   width: 90px;
   height: 90px;
 }
-h1 {
-  margin: 40px;
-}
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 0 100px;
+  align-items: center;
+  margin: 20px auto;
+}
+.pagination {
+  margin: 20px 0 40px;
+}
+.pagination button {
+  font-size: 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  height: 25px;
+  width: 45px;
+  background-color: transparent;
+  color: #2a363b;
+  border-radius: 8px;
+  border: 1px solid #2a363b;
+}
+.pagination button.selectedPage {
+  font-weight: bold;
+  background-color: #2a363b;
+  color: white;
+  width: 70px;
+}
+.pagination button:hover {
+  font-weight: bold;
+  background-color: #2a363b;
+  color: white;
 }
 .userContainer {
   display: flex;
@@ -21,6 +43,7 @@ h1 {
   width: 600px;
   height: 160px;
   margin-bottom: 40px;
+  padding: auto 20px;
 }
 .imageContainer {
   display: flex;
@@ -55,7 +78,7 @@ h1 {
 
 .mainInfoContainer {
   justify-self: start;
-  margin: 10px 10px;
+  margin: 5px 5px;
 }
 .name {
   justify-self: start;
@@ -64,6 +87,7 @@ h1 {
   font-weight: bold;
   color: black;
   margin-bottom: 40px;
+  word-break: break-all;
 }
 .status {
   justify-self: start;
@@ -77,7 +101,74 @@ h1 {
   text-align: end;
   align-items: center;
   justify-self: end;
-  margin: 10px 30px;
+  margin: 10px 20px;
   letter-spacing: 2px;
-  padding: 30px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  .userPhoto {
+    width: 45px;
+    height: 45px;
+  }
+  .wrapper {
+    margin: 10px auto;
+  }
+  .pagination {
+    margin: 20px 0 40px;
+  }
+
+  .userContainer {
+    width: 350px;
+    height: 110px;
+    margin-bottom: 40px;
+    padding: auto 20px;
+  }
+  .imageContainer {
+    margin: 0 10px;
+    height: 70px;
+  }
+
+  .pagination button {
+    font-size: 10px;
+    margin: 0 5px;
+    height: 20px;
+    width: 30px;
+  }
+  .pagination button.selectedPage {
+    width: 40px;
+  }
+
+  .infoContainer {
+    width: 250px;
+  }
+  .button {
+    width: 58px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .name {
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    word-break: break-all;
+  }
+  .status {
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    word-break: break-all;
+  }
+  .location {
+    font-size: 8px;
+    margin: 5px 5px;
+    letter-spacing: 1px;
+    padding: 15px;
+  }
 }
