@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import NavBar from "./Components/NavBar/NavBar";
 import Profile from "./Components/Profile/Profile";
-import UsersPageContainer from "./Components/Profile/UsersPage/UsersPageContainer";
+import UsersContainer from "./Components/Profile/UsersPage/UsersContainer";
 import News from "./Components/News/News";
 import Music from "./Components/Music/Music";
 import { Route, Routes } from "react-router-dom";
@@ -17,7 +17,7 @@ function App(props) {
       <div className="app-wrapper-content">
         <Routes>
           <Route exact path="/profile" element={<Profile />} />
-          <Route exact path="/users" element={<UsersPageContainer />} />
+          <Route exact path="/users" element={<UsersContainer />} />
           <Route exact path="/dialogs" element={<DialogsContainer />} />
           <Route exact path="/news" element={<News />} />
           <Route exact path="/music" element={<Music />} />
