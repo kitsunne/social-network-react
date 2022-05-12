@@ -1,11 +1,35 @@
 .header {
   grid-area: header;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: #2a363b;
+  padding: 0 20px;
 }
 .header img {
   width: 140px;
-  align-content: center;
-  margin: 25px 0 0 25px;
+}
+.loginBlock{
+  width: auto;
+  padding: 0 7px;
+  height:auto;
+  background-color: #c06c84;
+  font-size: 13px;
+  font-weight:bold;
+  color: white;
+  text-decoration: none;
+ 
+}
+.accountInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.accountIcon{
+  width:25px;
+  height: 25px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {

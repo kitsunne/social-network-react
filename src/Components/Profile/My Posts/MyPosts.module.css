@@ -1,5 +1,6 @@
 .postBlock {
   padding: 20px;
+  margin-bottom: 50px;
 }
 .postBlock textarea {
   width: 300px;
@@ -18,6 +19,7 @@
   height: 40px;
   border-radius: 5px;
   color: white;
+  font-weight:bold;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -30,6 +32,7 @@
 @media screen and (max-width: 768px) {
   .postBlock {
     padding: 25px;
+    margin-bottom: 60px;
   }
   .postBlock textarea {
     width: 280px;

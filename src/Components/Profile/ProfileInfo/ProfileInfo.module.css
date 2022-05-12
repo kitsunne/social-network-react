@@ -1,5 +1,77 @@
+.profileHeaderData{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("https://i.pinimg.com/originals/01/5a/17/015a1757e67f766a12621af543b3a5fd.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 20px 30px 10px 30px;
+  height: 350px;
+}
+.profileMainData{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  width: auto;
+}
+.profileAvatarContainer{
+  margin-right: 40px;
+}
+.profileAvatar{
+  width: 160px;
+  border: 8px solid #dec1c7;
+  border-radius: 50%;
+}
+.profileNameContainer{
+ 
+}
+.profileName{
+  font-family:'Roboto Flex';
+  font-weight:bold;
+  font-size: 25px;
+  color:white;
+  text-transform: capitalize;
+
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+.profileJobStatus{
+color: white;
+}
+.descriptionBlock{
+ color:white;
+ width: 400px;
+ font-family:'Roboto Flex';
+}
+.contactsList{
+  display: flex;
+  flex-direction: column;
+  }
+.socialIcon{
+  width: 30px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  }
+.socialIcon:hover{
+  transition: 0.9s;
+  transform: rotateY(180deg);
+  }
+.contactsItem{
+ margin:10px;
+ display: flex;
+ align-items:center;
+ justify-content:flex-start;
+}
+.contactsItem a{
+  color:black;
+  font-size: 15px;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
-  img {
-    width: 375px;
+  .profileAvatar {
+  width:375px;
   }
 }

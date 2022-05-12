@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Users.module.css";
-import userPhoto from "../../../assets/images/user.png";
+import userPhoto from "../../../assets/images/user.webp";
+import { NavLink } from "react-router-dom";
 
 const Users = (props) => {
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -34,10 +35,12 @@ const Users = (props) => {
           <div key={u.id} className={styles.userContainer}>
             <div className={styles.imageContainer}>
               <div>
-                <img
-                  src={u.photos.small != null ? u.photos.small : userPhoto}
-                  className={styles.userPhoto}
-                />
+                <NavLink to={"/profile/" + u.id}>
+                  <img
+                    src={u.photos.small != null ? u.photos.small : userPhoto}
+                    className={styles.userPhoto}
+                  />
+                </NavLink>
               </div>
               <div className={styles.buttonContainer}>
                 {u.followed ? (
@@ -67,8 +70,10 @@ const Users = (props) => {
                 <div className={styles.status}>{u.status}</div>
               </div>
               <div className={styles.location}>
-                <div>{"u.location.city"},</div>
-                <div>{"u.location.country"}</div>
+                <div>
+                  <strong>ID:</strong> {u.id},
+                </div>
+                <div> {"u.location.country"}</div>
               </div>
             </div>
           </div>

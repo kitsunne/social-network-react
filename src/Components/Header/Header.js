@@ -1,12 +1,27 @@
 import React from "react";
-import classes from "./Header.module.css";
+import { NavLink } from "react-router-dom";
+import styles from "./Header.module.css";
+import { VscAccount } from "react-icons/vsc";
 
-const Header = () => {
-	return (
-		<header className={classes.header}>
-			<img src="https://besocial.thememasters.club/wp-content/uploads/2017/03/logo.png" alt="logo"></img>
-		</header>
-	);
+const Header = (props) => {
+  return (
+    <header className={styles.header}>
+      <img
+        src="https://besocial.thememasters.club/wp-content/uploads/2017/03/logo.png"
+        alt="logo"
+      ></img>
+      <div className={styles.loginBlock}>
+        {props.isAuth ? (
+          <div className={styles.accountInfo}>
+            <VscAccount className={styles.accountIcon} />
+            <p>{props.login}</p>
+          </div>
+        ) : (
+          <NavLink to={"./login"}>Log in</NavLink>
+        )}
+      </div>
+    </header>
+  );
 };
 
 export default Header;

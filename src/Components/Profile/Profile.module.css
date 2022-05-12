@@ -5,9 +5,12 @@ img {
 .descriptionBlock {
   padding: 10px;
 }
+.profileContainer{
+  height: 100%;
+}
 
 @media screen and (max-width: 768px) {
   img {
-    width: 380px;
+    width:375px;
   }
 }

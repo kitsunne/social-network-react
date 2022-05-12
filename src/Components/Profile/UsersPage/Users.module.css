@@ -84,6 +84,7 @@
   justify-self: start;
   font-size: 20px;
   letter-spacing: 2px;
+  font:"OpenSansBold";
   font-weight: bold;
   color: black;
   margin-bottom: 40px;
@@ -160,6 +161,7 @@
     word-break: break-all;
   }
   .status {
+    color:black;
     font-size: 8px;
     letter-spacing: 1px;
     font-weight: 300;
