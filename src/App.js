@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import ProfileContainer from "./Components/Profile/ProfileContainer";
 import HeaderContainer from "./Components/Header/HeaderContainer";
+import Settings from "./Components/Settings/Settings";
 
 function App(props) {
   return (
@@ -21,6 +22,7 @@ function App(props) {
           <Route exact path="/dialogs" element={<DialogsContainer />} />
           <Route exact path="/news" element={<News />} />
           <Route exact path="/music" element={<Music />} />
+          <Route exact path="/settings" element={<Settings />} />
         </Routes>
       </div>
     </div>

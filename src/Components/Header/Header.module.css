@@ -14,12 +14,17 @@
   width: auto;
   padding: 0 7px;
   height:auto;
-  background-color: #c06c84;
+  background-color:transparent;
   font-size: 13px;
   font-weight:bold;
   color: white;
   text-decoration: none;
- 
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+.loginBlock:hover{
+  border: 1px solid white;
 }
 .accountInfo{
   display: flex;
@@ -30,6 +35,10 @@
   width:25px;
   height: 25px;
   margin-right: 10px;
+  transition: transform .7s ease-in-out;
+}
+.accountIcon:hover{
+  transform: rotate(360deg);
 }
 
 @media screen and (max-width: 768px) {
