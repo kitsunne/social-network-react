@@ -45,5 +45,16 @@
     transform: scale(1.2);
 }
 
-
+@media screen and (max-width: 768px) {
+    .container{
+        margin: 50px auto;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+    }
+   
+  }
 

@@ -14,10 +14,12 @@ const Header = (props) => {
         {props.isAuth ? (
           <div className={styles.accountInfo}>
             <VscAccount className={styles.accountIcon} />
-            <p>{props.login}</p>
+            {props.login}
           </div>
         ) : (
-          <NavLink to={"./login"}>Log in</NavLink>
+          <NavLink className={styles.login} to={"./login"}>
+            Log in
+          </NavLink>
         )}
       </div>
     </header>

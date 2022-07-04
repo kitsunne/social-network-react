@@ -7,6 +7,11 @@
   background-color: #2a363b;
   padding: 0 20px;
 }
+.login{
+color:white;
+font-size: 15px;
+text-decoration: none;
+}
 .header img {
   width: 140px;
 }

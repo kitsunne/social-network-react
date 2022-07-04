@@ -1,3 +1,5 @@
+import { usersAPI } from "../api/api";
+
 const FOLLOW = "FOLLOW";
 const UN_FOLLOW = "UN-FOLLOW";
 const SET_USERS = "SET-USERS";
@@ -63,9 +65,9 @@ const userReducer = (state = initialState, action) => {
   }
 };
 
-export const follow = (userId) => ({ type: FOLLOW, userId });
+export const followSuccess = (userId) => ({ type: FOLLOW, userId });
 
-export const unFollow = (userId) => ({ type: UN_FOLLOW, userId });
+export const unFollowSuccess = (userId) => ({ type: UN_FOLLOW, userId });
 
 export const setUsers = (users) => ({ type: SET_USERS, users });
 export const setCurrentPage = (currentPage) => ({
@@ -85,5 +87,54 @@ export const toggleFollowingProgress = (isFetching, userId) => ({
   isFetching,
   userId,
 });
+
+export const getUsers = (currentPage, pageSize) => {
+  return (dispatch) => {
+    dispatch(toggleIsFetching(true));
+
+    usersAPI.getUsers(currentPage, pageSize).then((data) => {
+      dispatch(toggleIsFetching(false));
+      dispatch(setUsers(data.items));
+      dispatch(setTotalUsersCount(data.totalCount));
+    });
+  };
+};
+
+export const follow = (userId) => {
+  return (dispatch) => {
+    dispatch(toggleFollowingProgress(true, userId));
+    usersAPI.follow(userId).then((response) => {
+      if (response.data.resultCode == 0) {
+        dispatch(followSuccess(userId));
+      }
+      dispatch(toggleFollowingProgress(false, userId));
+    });
+  };
+};
+
+export const unFollow = (userId) => {
+  return (dispatch) => {
+    dispatch(toggleFollowingProgress(true, userId));
+    usersAPI.unFollow(userId).then((response) => {
+      if (response.data.resultCode == 0) {
+        dispatch(unFollowSuccess(userId));
+      }
+      dispatch(toggleFollowingProgress(false, userId));
+    });
+  };
+};
+
+export const pageChange = (pageNumber, pageSize) => {
+  return (dispatch) => {
+    dispatch(setCurrentPage(pageNumber));
+    dispatch(toggleIsFetching(true));
+
+    usersAPI.getUsers(pageNumber, pageSize).then((data) => {
+      dispatch(toggleIsFetching());
+      dispatch(setUsers(data.items));
+      dispatch(setCurrentPage(pageNumber));
+    });
+  };
+};
 
 export default userReducer;
