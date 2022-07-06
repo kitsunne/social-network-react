@@ -9,6 +9,7 @@ import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import ProfileContainer from "./Components/Profile/ProfileContainer";
 import HeaderContainer from "./Components/Header/HeaderContainer";
 import Settings from "./Components/Settings/Settings";
+import LoginPage from "./Components/Login/Login";
 
 function App(props) {
   return (
@@ -23,6 +24,7 @@ function App(props) {
           <Route exact path="/news" element={<News />} />
           <Route exact path="/music" element={<Music />} />
           <Route exact path="/settings" element={<Settings />} />
+          <Route exact path="/login" element={<LoginPage />} />
         </Routes>
       </div>
     </div>

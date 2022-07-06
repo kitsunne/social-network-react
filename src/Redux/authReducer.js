@@ -29,14 +29,12 @@ export const setAuthUserData = (userId, email, login) => ({
 });
 
 export const getAuthUserData = () => (dispatch) => {
-  return (dispatch) => {
-    authAPI.me().then((data) => {
-      if (data.resultCode === 0) {
-        let { id, login, email } = data.data;
-        dispatch(setAuthUserData(id, login, email));
-      }
-    });
-  };
+  authAPI.me().then((response) => {
+    if (response.data.resultCode === 0) {
+      let { id, login, email } = response.data.data;
+      dispatch(setAuthUserData(id, login, email));
+    }
+  });
 };
 
 export default authReducer;

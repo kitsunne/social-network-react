@@ -9,6 +9,8 @@ import {
   FaVk,
 } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import userPhoto from "../../../assets/images/user.webp";
+import ProfileStatus from "./ProfileStatus";
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
@@ -22,7 +24,11 @@ const ProfileInfo = (props) => {
             {props.profile.photos.large ? (
               <img
                 className={styles.profileAvatar}
-                src={props.profile.photos.large}
+                src={
+                  props.profile.photos.large
+                    ? props.profile.photos.large
+                    : userPhoto
+                }
                 alt="profile-avatar"
               />
             ) : (
@@ -36,6 +42,10 @@ const ProfileInfo = (props) => {
           <div className={styles.profileNameContainer}>
             <h1 className={styles.profileName}>{props.profile.fullName}</h1>
             <div className={styles.descriptionBlock}>
+              <ProfileStatus
+                status={props.status}
+                updateStatus={props.updateStatus}
+              />
               <p>
                 <strong>Looking for a job: </strong>
                 {(props.profile.lookingForAJob = true ? "Yes" : "No")}

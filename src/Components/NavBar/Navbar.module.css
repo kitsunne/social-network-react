@@ -16,6 +16,19 @@
 .item .active {
  color: #c06c84;
 }
+.itemLogin{
+  color: #c06c84;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.itemLogin .active{
+ font-weight: bold;
+ text-decoration: none;
+ color: #c06c84;
+}
 
 @media screen and (max-width: 768px) {
   .nav {

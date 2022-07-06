@@ -65,6 +65,16 @@ const NavBar = (props) => {
           Settings
         </NavLink>
       </div>
+      <div className={classes.itemLogin}>
+        <NavLink
+          to="/login"
+          className={(navData) =>
+            navData.isActive ? classes.active : classes.itemLogin
+          }
+        >
+          Log in
+        </NavLink>
+      </div>
     </nav>
   );
 };

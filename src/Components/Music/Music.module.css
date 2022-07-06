@@ -1,5 +1,5 @@
 .container{
-   margin: 100px auto ;
+   margin: 70px auto ;
    text-align: center;
 }
 .icon{
@@ -43,7 +43,9 @@
 
 .item:hover{
     transform: scale(1.2);
+    transform: rotate(360deg);
 }
+
 
 @media screen and (max-width: 768px) {
     .container{
