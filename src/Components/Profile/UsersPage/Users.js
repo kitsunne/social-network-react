@@ -31,6 +31,7 @@ const Users = (props) => {
           );
         })}
       </div>
+
       <div>
         {props.users.map((u) => (
           <div key={u.id} className={styles.userContainer}>
