@@ -1,0 +1,11 @@
+.status{
+    cursor: pointer;
+}
+
+.editMode input{
+    width: auto;
+    font-size: 17px;
+    border: none;
+    color: white;
+    background-color: transparent;
+}

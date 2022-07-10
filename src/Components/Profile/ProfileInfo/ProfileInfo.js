@@ -9,8 +9,8 @@ import {
   FaVk,
 } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
-import userPhoto from "../../../assets/images/user.webp";
 import ProfileStatus from "./ProfileStatus";
+import userAlternative from "../../../assets/images/userAlternative.jpeg";
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
@@ -27,14 +27,14 @@ const ProfileInfo = (props) => {
                 src={
                   props.profile.photos.large
                     ? props.profile.photos.large
-                    : userPhoto
+                    : userAlternative
                 }
                 alt="profile-avatar"
               />
             ) : (
               <img
                 className={styles.profileAvatar}
-                src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                src={userAlternative}
                 alt="profile-avatar"
               ></img>
             )}

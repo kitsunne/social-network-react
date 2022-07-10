@@ -1,5 +1,6 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import styles from "./AddMessageForm.module.css";
 
 const AddMessageForm = (props) => {
   let addNewMessage = (values) => {
@@ -18,15 +19,18 @@ const AddMessageForm = (props) => {
     >
       {() => (
         <Form>
-          <div>
-            <Field
-              name={"newMessageBody"}
-              as={"textarea"}
-              placeholder={"enter text"}
-            />
+          <div className={styles.formContainer}>
+            <div className={styles.textarea}>
+              <Field
+                name="newMessageBody"
+                as="textarea"
+                placeholder="Write smth..."
+              />
+            </div>
+            <button className={styles.button} type="submit">
+              Send
+            </button>
           </div>
-
-          <button type={"submit"}>Send</button>
         </Form>
       )}
     </Formik>

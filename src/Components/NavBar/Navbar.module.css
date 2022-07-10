@@ -17,17 +17,21 @@
  color: #c06c84;
 }
 .itemLogin{
-  color: #c06c84;
+  color: white;
+  background-color: rgb(48, 102, 123);
+  width: 85px;
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 20px;
   margin-top: 50px;
+  border-radius: 5px;
+  padding: 7px;
 }
 
 .itemLogin .active{
  font-weight: bold;
  text-decoration: none;
- color: #c06c84;
+ color: white;
 }
 
 @media screen and (max-width: 768px) {

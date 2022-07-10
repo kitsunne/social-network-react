@@ -3,8 +3,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-image: url("https://i.pinimg.com/originals/01/5a/17/015a1757e67f766a12621af543b3a5fd.jpg");
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/job545-wit-56_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=ec3ef5fbd6338493f4cab901659c8b72");
   background-size:cover;
+  background-position:center;
   background-repeat: no-repeat;
   padding: 20px 30px 10px 30px;
   height: 350px;
@@ -15,27 +16,28 @@
   align-items: center;
   margin: 0;
   width: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  padding: 10px;
 }
 .profileAvatarContainer{
   margin-right: 40px;
 }
 .profileAvatar{
   width: 160px;
-  border: 8px solid #dec1c7;
+  border: 3px solid #edad98 ;
   border-radius: 50%;
 }
-.profileNameContainer{
- 
-}
+
 .profileName{
   font-family:'Roboto Flex';
   font-weight:bold;
   font-size: 25px;
   color:white;
   text-transform: capitalize;
-
   border-bottom: 2px solid white;
   padding-bottom: 10px;
+
 }
 .profileJobStatus{
 color: white;
@@ -48,6 +50,8 @@ color: white;
 .contactsList{
   display: flex;
   flex-direction: column;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
   }
 .socialIcon{
   width: 30px;

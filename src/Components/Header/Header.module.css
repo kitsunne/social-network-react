@@ -8,9 +8,16 @@
   padding: 0 20px;
 }
 .login{
+background-color: rgb(48, 102, 123);
 color:white;
-font-size: 15px;
-text-decoration: none;
+font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 3px;
+}
+.login:hover{
+  font-size: 19px;
 }
 .header img {
   width: 140px;
@@ -25,16 +32,36 @@ text-decoration: none;
   color: white;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid transparent;
   border-radius: 15px;
 }
-.loginBlock:hover{
-  border: 1px solid white;
-}
+
 .accountInfo{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  width: 350px;
+}
+.loginInfo{
+  display: flex;
   align-items: center;
+}
+.logout{
+  display: flex;
+  align-items: center;
+}
+
+.logout button{
+  background-color: rgb(48, 102, 123);
+  color:white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+}
+.logout button:hover{
+  font-size: 19px;
 }
 .accountIcon{
   width:25px;

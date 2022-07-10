@@ -1,0 +1,25 @@
+.formContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content:center;
+  height: 50px;
+  width: 450px;
+}
+textarea {
+  height: inherit;
+  width: 300px;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.button {
+  background-color: #c06c84;
+  border: rgb(255, 255, 255) 1px solid;
+  width: 100px;
+  height: inherit;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}

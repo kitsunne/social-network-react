@@ -39,19 +39,24 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 10px;
-  border: 2px solid black;
+ 
   width: 600px;
   height: 160px;
   margin-bottom: 40px;
   padding: auto 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.imageContainer {
+.imageContainer img {
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.mainInfoBlock{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 30px;
   height: 150px;
+
 }
 .buttonContainer {
   margin: 5px 0;

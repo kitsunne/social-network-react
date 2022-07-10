@@ -13,11 +13,17 @@ const Header = (props) => {
       <div className={styles.loginBlock}>
         {props.isAuth ? (
           <div className={styles.accountInfo}>
-            <VscAccount className={styles.accountIcon} />
-            {props.login}
+            <div className={styles.loginInfo}>
+              <VscAccount className={styles.accountIcon} />
+              {props.login}
+            </div>
+
+            <div className={styles.logout}>
+              <button onClick={props.logout}>Log out</button>
+            </div>
           </div>
         ) : (
-          <NavLink className={styles.login} to={"./login"}>
+          <NavLink className={styles.login} to={"/login"}>
             Log in
           </NavLink>
         )}

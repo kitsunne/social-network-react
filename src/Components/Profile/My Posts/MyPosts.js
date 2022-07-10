@@ -21,7 +21,7 @@ const MyPosts = (props) => {
   return (
     <div className={styles.postBlock}>
       <h3>MY POSTS</h3>
-      <div>
+      <div className={styles.addPostBlock}>
         <div>
           <textarea
             ref={newPostElement}
