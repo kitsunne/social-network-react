@@ -1,5 +1,5 @@
 import React from "react";
-import loader from "../../assets/images/loader.gif";
+import loader from "../../assets/images/loader3.gif";
 import styles from "./Loader.module.css";
 
 const Loader = (props) => {

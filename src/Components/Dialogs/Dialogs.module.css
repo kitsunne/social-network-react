@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 200px auto;
   grid-template-rows: auto 150px;
+  height:fit-content;
 }
 .dialogsItems {
   padding: 40px;
@@ -19,8 +20,8 @@
   margin-top: 40px;
   border-radius: 5px;
   height: 50px;
-  width: 125px;
-  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  width: 135px;
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.20);
 }
 .dialog a {
   text-decoration: none;
@@ -43,10 +44,10 @@
 }
 .messages .message {
   color: black;
-  background-color: #c06c84;
+  background-color: #e69d8c;
   padding: 15px;
   border-radius: 5px;
-  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.20);
 }
 
 .newMessage {
