@@ -57,7 +57,7 @@ const Users = (props) => {
                       props.unFollow(u.id);
                     }}
                   >
-                    UnFollow
+                    Following
                   </button>
                 ) : (
                   <button
@@ -69,7 +69,7 @@ const Users = (props) => {
                       props.follow(u.id);
                     }}
                   >
-                    Follow
+                    + Follow
                   </button>
                 )}
               </div>

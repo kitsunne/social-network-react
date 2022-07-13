@@ -70,6 +70,7 @@
   color: rgb(6, 6, 6);
   font-size: 15px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .unFollowButton{
   background-color: #c06c84;
@@ -80,11 +81,13 @@
   color: white;
   font-size: 15px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .button:hover {
   background-color: transparent;
   border: rgb(2, 2, 2) 1px solid;
   color: black;
+  cursor: pointer;
 }
 .infoContainer {
   display: grid;

@@ -17,10 +17,10 @@ const Login = (props) => {
         <p>
           Please, use this data to login to your test account:
           <p>
-            <strong>Email: free@samuraijs.com</strong>{" "}
+            <strong>Email: kitsunne.testing@gmail.com</strong>{" "}
           </p>
           <p>
-            <strong>Password: free</strong>{" "}
+            <strong>Password: KitTestAcc</strong>{" "}
           </p>
         </p>
       </div>
@@ -55,9 +55,8 @@ const Login = (props) => {
                   <Field type="checkbox" name="rememberMe" />
                   <label htmlFor="rememberMe">remember me</label>
                 </div>
-
                 <button className={styles.button} type="submit">
-                  Login
+                  <span>Login</span>
                 </button>
               </Form>
             )}
