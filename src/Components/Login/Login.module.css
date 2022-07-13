@@ -29,8 +29,8 @@ justify-content: space-between;
 align-items: center;
 border-radius: 10px;
 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.10), 0 10px 15px rgba(0, 0, 0, 0.10);
-width: 350px;
-height: 400px;
+width: 400px;
+height: 450px;
 }
 .form{
     display: flex;
@@ -40,7 +40,7 @@ height: 400px;
 }
 .email input{
     border-radius: 10px;
-    width: 190px;
+    width:250px;
     height: 40px;  
     text-align: center;
     border: 1px solid rgb(130, 129, 129);
@@ -48,7 +48,7 @@ height: 400px;
 }
 .password input{
     border-radius: 10px;
-    width: 190px;
+    width:250px;
     height: 40px;  
     text-align: center;
     border: 1px solid rgb(130, 129, 129);
@@ -69,13 +69,12 @@ height: 400px;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 25px;
- 
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-button:after {
+.button:after {
   content: '»';
   position: absolute;
   opacity: 0;  
@@ -84,12 +83,12 @@ button:after {
   transition: 0.5s;
 }
 
-button:hover{
+.button:hover{
   padding-right: 24px;
   padding-left:8px;
 }
 
-button:hover:after {
+.button:hover:after {
   opacity: 1;
   right: 12px;
 }
